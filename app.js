@@ -180,6 +180,7 @@ app.use((err, req, res, next) => {
     res.status(status).render('error', { err });
 })
 
+const port = process.env.PORT || 3000
 app.listen(3000, () => {
-    console.log("Connected to port 3000!")
+    console.log(`Connected to port ${port}`)
 })
